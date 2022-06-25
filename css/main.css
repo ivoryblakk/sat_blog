@@ -1,0 +1,47 @@
+@import url('./header.css');
+@import url('./cards.css');
+@import url('./image.css');
+@import url('./info.css');
+@import url('./footer.css');
+
+.wrapper {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 70px 1fr 1fr 90px;
+    grid-template-areas: "header header"
+                        "cards  cards"
+                        "image  info"
+                        "footer footer";
+    height: 100vh;
+}
+
+/* Show Medium Screen */
+@media screen and (min-width: 601px) and (max-width: 800px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 70px 1fr 1fr 1fr 90px;
+        grid-template-areas: "header "
+                            "image "
+                            "info"
+                             "cards "
+                             "footer ";
+        height: 100vh;
+    }
+
+}
+
+/* Show small screen */
+@media screen and (max-width: 600px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 70px 1fr 1fr 1fr 90px;
+        grid-template-areas: "header "
+                             "cards "
+                             "image "
+                             "info"
+                             "footer ";
+        height: 100vh;
+    }
+}

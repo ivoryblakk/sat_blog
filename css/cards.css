@@ -1,0 +1,22 @@
+.cards{
+    grid-area: cards;
+    background-color: blue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+@media screen and (max-width: 600px) {
+    .cards{
+        grid-area: cards;
+        background-color: blue;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.card{
+ width: 200px;
+ height: 300px;
+ background-color: white;
+}
